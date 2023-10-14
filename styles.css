@@ -1,0 +1,348 @@
+﻿header {
+    background-color: #ffc7f4;
+    padding: 5px 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 22px;
+    position: relative; /* Ensure the header has a position value other than 'static' */
+    z-index: 1000; /* A high value to ensure the header is on top */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.navbar .navbar-brand img {
+    width: auto;
+    height: 80px; /* Adjust this value to your desired size */
+}
+
+.pipe {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing as needed */
+    color: #6a6774; /* Adjust color if needed */
+    vertical-align: middle;
+}
+
+.title {
+    flex-grow: 1;
+    margin-right: 20px;
+    font-size: 24px; /* Adjust as needed */
+}
+
+/* Remove or comment out these styles */
+/*
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav li {
+    display: inline;
+}
+*/
+
+/* Use more specific selectors */
+header .navbar-nav a {
+    text-decoration: none;
+    color: #6a6774 !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    header .navbar-nav a:hover {
+        background-color: #38b6ff;
+        color: #fff !important; /* Adjust this value if you want a different hover color */
+    }
+
+.more-menu .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffc7f4;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+.hero-section {
+    background-image: url('johnross.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust this value if needed */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 36px;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    transform: translateY(-125%); /* Adjust this percentage to move the content up or down */
+}
+
+
+    .hero-content h1 {
+        font-size: clamp(24px, 4vw, 72px);
+        color: #fff; /* Adjust color if needed */
+    }
+    .hero-content h2 {
+        font-size: clamp(10px,28px);
+        font-weight: 400;
+        font-style: italic;
+        color: #fff; /* Adjust color if needed */
+    }
+.donate-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffc7f4; /* Adjust color if needed */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+}
+
+    .donate-btn:hover {
+        background-color: #38b6ff; /* Adjust hover color if needed */
+        color: #fff !important; /* Adjust this value if you want a different hover color */
+    }
+
+.floating-image {
+    position: absolute;
+    bottom: -5px; /* Adjust this value based on your previous modifications */
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 1; /* This ensures the image stays behind the next section */
+}
+
+/* Add this to ensure the next section is on top */
+.container-fluid {
+    position: relative;
+    z-index: 2; /* This ensures the section is on top of the floating image */
+}
+
+.container h3 {
+    color: #6a6774; /* Adjust based on the design */
+    font-size: 24px; /* Adjust based on the design */
+    margin-bottom: 15px; /* Space between title and description */
+}
+
+.container p {
+    color: #6a6774; /* Adjust based on the design */
+    font-size: 18px; /* Adjust based on the design */
+}
+.custom-justify {
+    justify-content: flex-start; /* This aligns the image to the left of the container */
+    padding-left: 15%; /* Adjust this percentage to move the image more or less to the right */
+    background-color: #38b6ff; /* Set the background color of the left column */
+}
+.column-bg {
+    background-color: #cb6ce6;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+/* For the image in the 2nd column */
+.smaller-image {
+    width: 80%; /* Adjust this percentage to your desired size */
+    max-width: 100%;
+    height: auto;
+}
+
+/* For the text in the 3rd column */
+.custom-text {
+    font-size: 24px; /* Adjust this value to your desired font size */
+    color: #fff; /* Adjust this value to your desired font color */
+}
+.centered-section {
+    background-color: #ffc7f4;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 50px 0; /* Add some vertical padding for spacing */
+}
+.blue-section {
+    background-color: #38b6ff;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 50px 0; /* Add some vertical padding for spacing */
+}
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.custom-btn {
+    background-color: #38b6ff;
+    color: #6a6774;
+    padding: 25px 90px; /* Increased padding for larger buttons */
+    margin: 0 55px; /* Slightly increased margin for spacing between larger buttons */
+    border: none;
+    border-radius: 8px; /* Slightly larger border radius for rounded corners */
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 25px; /* Increased font size */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .custom-btn:hover {
+        background-color: #ffc7f4;
+        color: #fff;
+    }
+
+.blue-text-section {
+    background-color: #38b6ff;
+    padding: 50px;
+}
+
+    .blue-text-section p {
+        color: #fff; /* Font color */
+        font-size: 24px; /* Font size */
+    }
+
+.success-stories-section {
+    background-color: #ffffff; /* Background color */
+    padding: 50px; /* Padding around the content */
+}
+
+.success-stories-title {
+    color: #ffc7f4; /* Font color */
+    font-size: 64px; /* Default font size, adjust as needed */
+    text-align: center; /* Center the text */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-style: bold;
+    /* Add any desired font style here, e.g., font-family, font-weight, etc. */
+}
+.social-media-section {
+    background-color: #ffc7f4;
+    padding: 20px 0; /* Adjust as needed */
+    font-family: 'Libre Baskerville', serif; /* Font type */
+    font-weight: 400;
+    font-style: regular;
+    font-size: 24px; /* Font size */
+    color: #6a6774; /* Font color */
+}
+
+/* Additional styles for the embeds, images, and text can be added as needed */
+.footer-section {
+    background-color: #38b6ff;
+    padding: 20px 0;
+    font-family: 'Your Preferred Font', sans-serif; /* Replace 'Your Preferred Font' with your desired font name */
+    color: #fff; /* Default text color */
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between logos */
+    margin-bottom: 20px;
+}
+
+    .logo-section img {
+        max-width: 100px; /* Adjust as needed */
+        transition: opacity 0.3s;
+    }
+
+        .logo-section img:hover {
+            opacity: 0.8;
+        }
+
+.contact-section p {
+    margin: 10px 0;
+    font-size: 18px; /* Adjust as needed */
+}
+
+.email-icon, .phone-icon {
+    margin-right: 10px;
+}
+
+.email-link {
+    color: inherit; /* This will make the link take on the color of its parent element */
+    text-decoration: none; /* This will remove the underline */
+}
+
+    .email-link:hover {
+        text-decoration: underline; /* This will underline the link when hovered */
+    }
+
+.phone-link {
+    color: inherit; /* This will make the link take on the color of its parent element */
+    text-decoration: none; /* This will remove the underline */
+}
+
+    .phone-link:hover {
+        text-decoration: underline; /* This will underline the link when hovered */
+    }
+
+.subscription-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between subscription boxes */
+    margin: 20px 0;
+}
+
+.email-subscribe, .fundraiser-subscribe {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white background for visibility */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.subscription-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription-section button {
+    background-color: #fff;
+    color: #38b6ff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .subscription-section button:hover {
+        background-color: #cb6ce6;
+        color: #fff;
+    }
+
+.social-media-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+    .social-media-section i {
+        font-size: 50px; /* Adjust as needed */
+        transition: color 0.3s;
+    }
+
+        .social-media-section i:hover {
+            color: #cb6ce6;
+        }
